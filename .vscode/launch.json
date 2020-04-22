@@ -20,19 +20,9 @@
       "type": "chrome",
       "request": "attach",
       "port": 9223,
-      "webRoot": "${workspaceFolder}",
+      "webRoot": "${workspaceFolder}/",
       "timeout": 30000,
-      "urlFilter": "http://localhost:4200/*",
-      // Source map overrides are copied from Angular CLI debugging recipe.
-      // See: https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI
-      "sourceMaps": true,
-      "sourceMapPathOverrides": {
-        "webpack:/*": "${webRoot}/*",
-        "/./*": "${webRoot}/*",
-        "/src/*": "${webRoot}/*",
-        "/*": "*",
-        "/./~/*": "${webRoot}/node_modules/*"
-      }
+      "trace": true
     }
   ],
   "compounds": [
